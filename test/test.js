@@ -12,22 +12,20 @@ describe('Symbols', function() {
 		assert.equal(true, languages.length > 1);
 	});
 
+	var languages = Symbols.languages();
+
+	languages.forEach(function(lang) {
+		it('should get symbols:' + lang, function() {
+			var symbols = Symbols.symbols(lang);
+			assert.ok(symbols);
+			assert.equal('string', typeof symbols['Sun']);
+		});
+	});
+
 	it('should get symbols', function() {
 		var symbols = Symbols.symbols();
 		assert.ok(symbols);
 		assert.equal('Sun', symbols['1']);
-	});
-
-	it('should get symbols:en', function() {
-		var symbols = Symbols.symbols('en');
-		assert.ok(symbols);
-		assert.equal('string', typeof symbols['Sun']);
-	});
-
-	it('should get symbols:ro', function() {
-		var symbols = Symbols.symbols('ro');
-		assert.ok(symbols);
-		assert.equal('string', typeof symbols['Sun']);
 	});
 
 	it('should get symbolCode:1', function() {

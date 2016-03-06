@@ -2,6 +2,8 @@
 
 A set of files with met.no weather symbol names.
 
+Supported languages: `['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq']`
+
 ## Files
 
 - **symbols**.json - general symbols
