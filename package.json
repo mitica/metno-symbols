@@ -1,13 +1,13 @@
 {
   "name": "metno-symbols",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A set of files for met.no weather symbols ",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -R spec"
+    "test": "mocha -R spec"
   },
   "repository": {
     "type": "git",
