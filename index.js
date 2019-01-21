@@ -1,7 +1,7 @@
 'use strict';
 
 var DEFAULT_LANG = 'en';
-var LANGUAGES = ['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq', 'tr'];
+var LANGUAGES = ['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq', 'tr', 'lv'];
 var languages = LANGUAGES.slice();
 
 function getLanguages() {
