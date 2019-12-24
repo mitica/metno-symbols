@@ -2,7 +2,7 @@
 
 A set of files with met.no weather symbol names.
 
-Supported languages: `['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq', 'tr', 'lv']`
+Supported languages: `['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq', 'tr', 'lv', 'vi']`
 
 ## Files
 
