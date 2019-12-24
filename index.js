@@ -1,7 +1,20 @@
-'use strict';
+"use strict";
 
-var DEFAULT_LANG = 'en';
-var LANGUAGES = ['en', 'ro', 'bg', 'ru', 'hu', 'cs', 'it', 'pl', 'sq', 'tr', 'lv'];
+var DEFAULT_LANG = "en";
+var LANGUAGES = [
+	"en",
+	"ro",
+	"bg",
+	"ru",
+	"hu",
+	"cs",
+	"it",
+	"pl",
+	"sq",
+	"tr",
+	"lv",
+	"vi"
+];
 var languages = LANGUAGES.slice();
 
 function getLanguages() {
@@ -9,18 +22,18 @@ function getLanguages() {
 }
 
 function getData(name) {
-	return require('./data/' + name + '.json');
+	return require("./data/" + name + ".json");
 }
 
 function getSymbols(lang) {
-	var name = 'symbols';
+	var name = "symbols";
 	var lowerLang;
-	if (typeof lang === 'string') {
+	if (typeof lang === "string") {
 		lowerLang = lang.toLowerCase();
 		if (~LANGUAGES.indexOf(lowerLang)) {
 			name = lowerLang;
 		} else {
-			throw new Error('Unsupported language: ' + lang);
+			throw new Error("Unsupported language: " + lang);
 		}
 	}
 
@@ -35,7 +48,7 @@ function getSymbolCode(id) {
 function getSymbolName(code, lang) {
 	lang = lang || DEFAULT_LANG;
 
-	if (typeof code === 'number') {
+	if (typeof code === "number") {
 		code = getSymbolCode(code);
 	}
 
