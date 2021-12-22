@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/Mitica/metno-symbols#readme",
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "mocha": "^8.4.0"
   }
 }
