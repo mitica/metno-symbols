@@ -15,6 +15,7 @@ var LANGUAGES = [
 	"lv",
 	"vi",
 	"sr",
+	"hr",
 ];
 var languages = LANGUAGES.slice();
 
