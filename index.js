@@ -3,6 +3,7 @@
 var DEFAULT_LANG = "en";
 var LANGUAGES = [
 	"en",
+	"es",
 	"ro",
 	"bg",
 	"ru",
